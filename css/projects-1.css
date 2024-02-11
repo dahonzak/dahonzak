@@ -1,0 +1,114 @@
+/* Copywrite Dominik Honzak 2023 */
+#bg {
+ 
+  background-size:cover;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  z-index:-1;
+}
+.circle {
+  width:10px;
+  height:10px;
+  border-radius:100%;
+  background-color:white;
+  position:fixed;
+  opacity:0.5;
+  display:block;
+  z-index:-1;
+}
+.title {
+  font-size:65px;
+  font-family:"Rozha One",serif;
+  /* width:100vw; */
+  text-align:center;
+  color:var(--colorUnselect);
+  text-shadow: 0px 0px 10px var(--colorUnselect),0px 0px 10px red;
+}
+.pjholder {
+  /* text-align:center; */
+  position:fixed;
+  top:100px;
+  left:0;
+  height:calc(100vh - 100px);
+  width:100vw;
+  overflow:auto;
+}
+.pj {
+  margin:10px;
+  width:calc(100vw - 40px);
+  padding:20px;
+  background:rgba(0,0,0,0.5);
+  backdrop-filter:blur(10px);
+  box-shadow:0px 0px 20px 1px var(--bg);
+  height:300px;
+  border-radius:20px;
+  position:relative;
+  cursor:pointer;
+  transition:0.2s linear;
+  color:var(--colorUnselect);
+}
+.pj img {
+  height:260px;
+  width:400px;
+  border-radius:10px;
+  object-fit:cover;
+}
+.pj h2 {
+  position:absolute;
+  left:450px;
+  top:20px;
+  font-family:"Rozha One",serif;
+  font-size:30px;
+}
+.pj p {
+  position:absolute;
+  left:450px;
+  top:70px;
+  max-width:calc(100% - 470px);
+}
+.pj:hover {
+  box-shadow:0px 0px 20px 1px var(--color);
+}
+
+@media (max-width: 767px) {
+  .pjholder {
+    position: fixed;
+  top: 0px;
+  left: 0;
+  height: calc(100vh - 40px);
+      padding-top:100px;
+  }
+  .pj img {
+    width:100%;
+    height:auto;
+  }
+  .pj h2 {
+  position:relative;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+  font-size:30px;
+}
+.pj p {
+  display:none;
+  position:relative;
+   top:0;
+    left:0;
+  max-width:100%;
+  width:calc(100% - 40px);
+}
+}
+.rainbowio {
+  animation:rainbowio 12s ease-in-out infinite;
+}
+ @keyframes rainbowio {
+  0% { box-shadow: inset 0px 0px 50px 1px red,0px 0px 20px 1px red;}
+  25% {box-shadow: inset 0px 0px 50px 1px #00ff59,0px 0px 20px 1px #00ff59;}
+  50% {box-shadow: inset 0px 0px 50px 1px #ee00ff,0px 0px 20px 1px #ee00ff;}
+  75% {box-shadow: inset 0px 0px 50px 1px #00fbff,0px 0px 20px 1px #00fbff;}
+  100% {box-shadow: inset 0px 0px 50px 1px red,0px 0px 20px 1px red;}
+}

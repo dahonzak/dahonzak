@@ -1,0 +1,46 @@
+<!--  Copywrite Dominik Honzak 2023  -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Radio | @dahonzak</title>
+  <link rel='icon' href='/dom.jpg' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='nav-1.css' />
+  <link rel='stylesheet' href='radio-1.css' />
+</head>
+<body>
+  <nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/radio" class='teaTheme'>Radio</a></li>
+  </ul>
+</nav>
+ <div id='bg'></div>
+   <div id='center'>
+  <h1>Dom's Radio</h1>
+  <div id='card'>
+    <h2 id='Music'>Music</h2>
+    <div id='Artist'>Player</div>
+  </div>
+  <button id="joinButton"><i class="fa fa-play"></i></button>
+  </div>
+  <div id='listen'></div>
+  <div id='audioControl'>
+     <h1 style='font-size:45px;margin-bottom:50px;'>Volume</h1>
+    <input type="range" min="0" max="100" value="100" id="slide" onchange='volume()'>
+  </div>
+  <div id='audio' onclick='openVolume();'><i class="fa fa-volume-up"></i></div>
+  <div id='copywrite'>© Copywrite Dominik Honzak 2023 (speed: <span id='loadSpeed'></span>)</div>
+  <audio id="player" src=""></audio>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script>
+  <script src='radio-1.js'></script>
+
+ 
+</body>
+</html>

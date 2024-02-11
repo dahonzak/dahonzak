@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Rozha+One&display=swap');
+/* Copywrite Dominik Honzak 2023 */
+* {
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+  font-weight: normal;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+html,body {
+  margin:0;padding:0;height:100%;width:100%;
+}
+:root {
+  --bg:black;
+  --color:white;
+  --colorUnselect:rgba(255,255,255,0.6);
+  --navHeight:100px;
+  --x:0;
+  --y:0;
+}
+body {
+  font-family: "Lato",sans-serif;
+  background:var(--bg);
+  overflow:hidden;
+}
+
+nav {
+  /* background:red; */
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:var(--navHeight);
+  line-height:60px;
+  z-index:1000;
+}
+nav ul li {
+  margin: 0px 20px; 
+  display:inline-block;
+}
+nav ul li a {
+  text-decoration:none;
+  color:var(--colorUnselect);
+  cursor:pointer;
+  transition:0.2s linear;
+}
+nav ul li a:hover {
+  color:var(--color);
+}
+#copywrite {
+  position:fixed;
+  bottom:0;
+  left:0;
+  color:var(--colorUnselect);
+  margin:10px;
+}
+@media (max-width: 767px) {
+  nav {
+    font-size:15x;
+  }
+  nav ul li {
+    margin:5px;
+    height:100%;
+    line-height:60px;
+  }
+  nav ul li a {
+    height:100%;
+    line-height:60px;
+  }
+}
+.rainbowTheme{animation:forgottenSteaming 10s linear infinite;color:black;text-shadow:0px 0px 6px #ff0000,4px 4px 6px #00ff00,-4px -4px 6px #0000ff,7px 2px 6px #ffff00,-7px -2px 6px #ff00ff,3px -5px 12px #00ffff;}@keyframes forgottenSteaming{0%,100%{text-shadow:0px 0px 6px #ff00ff,4px 4px 6px #ff0000,-4px -4px 6px #00ff00,7px 2px 6px #0000ff,-7px -2px 6px #ffff00,3px -5px 12px #00ffff;}20%{text-shadow:0px 0px 6px #ff0000,4px 4px 6px #00ff00,-4px -4px 6px #0000ff,7px 2px 6px #ffff00,-7px -2px 6px #ff00ff,3px -5px 12px #00ffff;}40%{text-shadow:0px 0px 6px #0000ff,4px 4px 6px #ffff00,-4px -4px 6px #ff00ff,7px 2px 6px #ff0000,-7px -2px 6px #00ff00,3px -5px 12px #00ffff;}60%{text-shadow:0px 0px 6px #ffff00,4px 4px 6px #ff00ff,-4px -4px 6px #0000ff,7px 2px 6px #ff0000,-7px -2px 6px #00ff00,3px -5px 12px #00ffff;}80%{text-shadow:0px 0px 6px #00ffff,4px 4px 6px #0000ff,-4px -4px 6px #ffff00,7px 2px 6px #ff00ff,-7px -2px 6px #ff0000,3px -5px 12px #00ff00;}}.teaTheme{animation:teaSteaming 10s linear infinite;color:black;text-shadow:0px 0px 6px #8B4513,4px 4px 6px #D2B48C,-4px -4px 6px #CD853F,7px 2px 6px #FFFFE0,-7px -2px 6px #FFD700,3px -5px 12px #F0E68C;}@keyframes teaSteaming{0%,100%{text-shadow:0px 0px 6px #FFD700,4px 4px 6px #8B4513,-4px -4px 6px #D2B48C,7px 2px 6px #CD853F,-7px -2px 6px #FFFFE0,3px -5px 12px #F0E68C;}20%{text-shadow:0px 0px 6px #8B4513,4px 4px 6px #D2B48C,-4px -4px 6px #CD853F,7px 2px 6px #FFFFE0,-7px -2px 6px #FFD700,3px -5px 12px #F0E68C;}40%{text-shadow:0px 0px 6px #D2B48C,4px 4px 6px #CD853F,-4px -4px 6px #FFD700,7px 2px 6px #8B4513,-7px -2px 6px #F0E68C,3px -5px 12px #FFFFE0;}60%{text-shadow:0px 0px 6px #FFFFE0,4px 4px 6px #FFD700,-4px -4px 6px #8B4513,7px 2px 6px #D2B48C,-7px -2px 6px #CD853F,3px -5px 12px #F0E68C;}80%{text-shadow:0px 0px 6px #F0E68C,4px 4px 6px #FFFFE0,-4px -4px 6px #FFD700,7px 2px 6px #8B4513,-7px -2px 6px #D2B48C,3px -5px 12px #CD853F;}}.southTheme { animation: magicSteaming 10s linear infinite; color:#ffffff; text-shadow:0px 0px 6px red,4px 4px 6px white,-4px -4px 6px white,7px 2px 6px white,-7px -2px 6px white,3px -5px 12px #b8daff;} @keyframes magicSteaming { 0%{ text-shadow:0px 0px 6px #9900ff,4px 4px 6px red,-4px -4px 6px white,7px 2px 6px white,-7px -2px 6px #ff00ae,3px -5px 12px #b8daff; } 20% { text-shadow:0px 0px 6px white,4px 4px 6px #eeff00,-4px -4px 6px #ff9500,7px 2px 6px white,-7px -2px 6px #cd18be,3px -5px 12px #b8daff; } 40%{ text-shadow:0px 0px 6px white,4px 4px 6px white,-4px -4px 6px #00ffaa,7px 2px 6px #00ffaa,-7px -2px 6px white,3px -5px 12px #b8daff; } 60% { text-shadow:0px 0px 6px #000000,4px 4px 6px black,-4px -4px 6px white,7px 2px 6px #00aaff,-7px -2px 6px #0047a3,3px -5px 12px #b8daff; } 80% { text-shadow:0px 0px 6px white,4px 4px 6px white,-4px -4px 6px white,7px 2px 6px white,-7px -2px 6px #ff00ae,3px -5px 12px #ff00ae; } 100%{ text-shadow:0px 0px 6px #9900ff,4px 4px 6px red,-4px -4px 6px white,7px 2px 6px white,-7px -2px 6px #ff00ae,3px -5px 12px #b8daff; } }
+.northTheme { animation: warlordSteaming 10s linear infinite; color:black; text-shadow:0px 0px 6px red,4px 4px 6px black,-4px -4px 6px black,7px 2px 6px black,-7px -2px 6px black,3px -5px 12px #b8daff;} @keyframes warlordSteaming { 0%{ text-shadow:0px 0px 6px #9900ff,4px 4px 6px red,-4px -4px 6px black,7px 2px 6px black,-7px -2px 6px #ff00ae,3px -5px 12px #b8daff; } 20% { text-shadow:0px 0px 6px black,4px 4px 6px #eeff00,-4px -4px 6px #ff9500,7px 2px 6px black,-7px -2px 6px #cd18be,3px -5px 12px #b8daff; } 40%{ text-shadow:0px 0px 6px black,4px 4px 6px black,-4px -4px 6px #00ffaa,7px 2px 6px #00ffaa,-7px -2px 6px black,3px -5px 12px #b8daff; } 60% { text-shadow:0px 0px 6px #ffffff,4px 4px 6px white,-4px -4px 6px black,7px 2px 6px #00aaff,-7px -2px 6px #0047a3,3px -5px 12px #b8daff; } 80% { text-shadow:0px 0px 6px black,4px 4px 6px black,-4px -4px 6px black,7px 2px 6px black,-7px -2px 6px #ff00ae,3px -5px 12px #ff00ae; } 100%{ text-shadow:0px 0px 6px #9900ff,4px 4px 6px red,-4px -4px 6px black,7px 2px 6px black,-7px -2px 6px #ff00ae,3px -5px 12px #b8daff; } }.otherTheme { animation: otherThemeSteaming 10s linear infinite; background: -webkit-linear-gradient(40deg,rgb(12, 201, 157), #2063e8, #ed3be4);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-size:100%;}
+@keyframes otherThemeSteaming { 0%{text-shadow:0px 0px 5px red;}20% {text-shadow:0px 0px 5px orange;}40%{text-shadow:0px 0px 5px lime;} 60% { text-shadow:0px 0px 5px  #57b6ff;}80% { text-shadow:0px 0px 5px  #ff00dd;}100%{text-shadow:0px 0px 5px red;}}
+.mouse-cursor-gradient-tracking {
+  overflow: hidden;
+}
+.mouse-cursor-gradient-tracking::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, rgba(255,255,255,0.2), transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.mouse-cursor-gradient-tracking:hover::before {
+  --size: 600px;
+}
