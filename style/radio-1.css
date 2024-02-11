@@ -3,7 +3,7 @@ audio {
   display:none;
 }
 #bg {
-   background:url('./pics/croatia-1.jpg') fixed no-repeat center center;
+   background:url('../pics/croatia-1.jpg') fixed no-repeat center center;
   background-size:cover;
   z-index:-1;
   position:absolute;
