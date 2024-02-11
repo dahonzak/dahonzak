@@ -51,12 +51,14 @@
   color:var(--colorUnselect);
 }
 .pj img {
+  pointer-events: none;
   height:260px;
   width:400px;
   border-radius:10px;
   object-fit:cover;
 }
 .pj h2 {
+  pointer-events: none;
   position:absolute;
   left:450px;
   top:20px;
@@ -64,6 +66,7 @@
   font-size:30px;
 }
 .pj p {
+  pointer-events: none;
   position:absolute;
   left:450px;
   top:70px;
