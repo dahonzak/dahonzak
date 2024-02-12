@@ -23,8 +23,6 @@ const dahonzakSimulateParticles = function() {
     });      
     svg.appendChild(particle); 
   }      
-  
-  
 };
 const showImage = function(image) {
   imageBox.style.background = "url('../dahonzak/ExtraPics/"+image+"') no-repeat center center";
