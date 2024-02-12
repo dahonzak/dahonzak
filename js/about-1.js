@@ -27,11 +27,11 @@ const dahonzakSimulateParticles = function() {
   
 };
 const showImage = function(image) {
-  imageBox.style.background = "url('../ExtraPics/"+image+"') no-repeat center center";
+  imageBox.style.background = "url('../dahonzak/ExtraPics/"+image+"') no-repeat center center";
   imageBox.style.backgroundSize = "cover";
 };
 const resetImg = function() {
-  imageBox.style.background = "url('../pics/dom-paris.jpg') no-repeat center center";
+  imageBox.style.background = "url('../dahonzak/pics/dom-paris.jpg') no-repeat center center";
   imageBox.style.backgroundSize = "cover";
 };
 dahonzakSimulateParticles();
