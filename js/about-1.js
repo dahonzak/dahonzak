@@ -29,7 +29,7 @@ const showImage = function(image) {
   imageBox.style.backgroundSize = "cover";
 };
 const resetImg = function() {
-  imageBox.style.background = "url('../dahonzak/pics/dom-paris.jpg') no-repeat center center";
+  imageBox.style.background = "url('../dahonzak/ExtraPics/me.jpg') no-repeat center center";
   imageBox.style.backgroundSize = "cover";
 };
 dahonzakSimulateParticles();

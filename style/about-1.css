@@ -28,7 +28,7 @@ h3 {
   color:var(--color);
 }
 .profpic {
-  background:url('../pics/dom-paris.jpg') no-repeat center center;
+  background:url('../ExtraPics/me.jpg') no-repeat center center;
   background-size:cover;
   transition:0.2s linear;
 }
