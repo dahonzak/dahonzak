@@ -36,13 +36,14 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   position: fixed;
-  top: 60px;
+  top:0px;
   left: 0;
   height: calc(100vh - 60px);
   width: 100vw;
   padding: 20px;
   box-sizing: border-box;
   overflow:auto;
+   padding-top:100px;
 }
 
 .box {
@@ -83,7 +84,7 @@ h3 {
   top: 0px;
   left: 0;
   height: calc(100vh - 40px);
-      padding-top:100px;
+     
   }
   .box {
     text-align:center;
