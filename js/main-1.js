@@ -1,19 +1,8 @@
 /* Copywrite Dominik Honzak 2023 */
 let svg = document.querySelector('#svg-container');
 let ripple = document.querySelector('#ripple');
-// let audioContext = new AudioContext();
-// let audioSource, analyser;
 let particles = [];
-// navigator.mediaDevices.getUserMedia({audio: true})
-//   .then(function(stream) {
-//     audioSource = audioContext.createMediaStreamSource(stream);
-//     analyser = audioContext.createAnalyser();
-//     audioSource.connect(analyser);
-//     loop();
-//   })
-//   .catch(function(err) {
-//     console.error('Error getting audio input', err);
-//   });
+let counter = 0;
 class Particle {
   constructor(x, y, size, speed, color) {
     this.x = x;
@@ -35,11 +24,7 @@ class Particle {
     svg.appendChild(circle);
   }
 } 
-function loop() {
-  // let frequencyData = new Uint8Array(analyser.frequencyBinCount);
-  // analyser.getByteFrequencyData(frequencyData);
-  // let avg = getAverage(frequencyData);
-  // ripple.setAttribute('r', avg * 2);
+const loop = () => {
   if (Math.random() > 0.8) {
     let x = Math.random() * svg.clientWidth;
     let y = Math.random() * svg.clientHeight;
@@ -57,13 +42,9 @@ function loop() {
       particles[i].draw();
     }
   }
-  requestAnimationFrame(loop);
-}
+  counter++
+  if (counter < 50) {
+    requestAnimationFrame(loop);
+  }
+};
  loop();
-// function getAverage(array) {
-//   let sum = 0;
-//   for (let i = 0; i < array.length; i++) {
-//     sum += array[i];
-//   }
-//   return sum / array.length;
-// }
