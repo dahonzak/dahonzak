@@ -11,7 +11,7 @@ const dahonzakSimulateParticles = function() {
 
     particle.setAttribute('cx', Math.random() * 100);
     particle.setAttribute('cy', Math.random() * 100);      
-    particle.setAttribute('r', Math.random() * 5 + 5);
+    particle.setAttribute('r', Math.random() * 5 + 10);
     particle.setAttribute('fill', color);  
 
     particle.animate([       

@@ -43,7 +43,7 @@ const loop = () => {
     }
   }
   counter++
-  if (counter < 50) {
+  if (counter < 1000) {
     requestAnimationFrame(loop);
   }
 };
