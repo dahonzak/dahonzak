@@ -1,4 +1,4 @@
-/* Copywrite Dominik Honzak 2023 */
+/* Copyright Dominik Honzak 2023 */
 let svg = document.querySelector('#svg-container');
 let ripple = document.querySelector('#ripple');
 let particles = [];

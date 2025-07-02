@@ -1,3 +1,4 @@
+/* Copyright Dominik Honzak 2023 */
 function mouseMove(e) {
   var rect = e.target.getBoundingClientRect();
   var x = e.clientX - rect.left;

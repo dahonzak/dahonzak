@@ -1,4 +1,4 @@
-/* Copywrite Dominik Honzak 2023 */
+/* Copyright Dominik Honzak 2023 */
 const imageBox = document.getElementsByClassName("profpic")[0];
 const dahonzakSimulateParticles = function() {
   document.getElementById('bg').innerHTML = '<svg id="svg" width="100vw" height="100vh" style={{overflow: "hidden"}}/>';

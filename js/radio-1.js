@@ -1,5 +1,4 @@
-/* Copywrite Dominik Honzak 2023 */
-
+/* Copyright Dominik Honzak 2023 */
 const socket = io();
 const player = document.getElementById('player');
 const joinButton = document.getElementById('joinButton');
